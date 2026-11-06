@@ -1,0 +1,356 @@
+
+Adaptive Mitigation Controller
+--------------------------------
+Namespace: image-pull-mitigation-lab
+Quota: adaptive-pod-limit
+State file: F:\image-pull-defense\adaptive_state.txt
+History file: F:\image-pull-defense\mitigation_history.jsonl
+Apply mode: ENABLED
+Polling interval: 5 seconds
+State limits: NORMAL=10, SUSPICIOUS=10, ORPHAN_PULL=3, PULL_FLOOD=2, RESOURCE_PRESSURE=2, RECOVERY=2
+Loaded local Kubernetes configuration.
+
+POLICY STATE CHANGE: UNKNOWN -> RECOVERY
+State=RECOVERY | Action=ENFORCE POD LIMIT 2
+State=RECOVERY | Quota already correct and verified: 2 Pods.
+
+POLICY STATE CHANGE: RECOVERY -> PULL_FLOOD
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+
+POLICY STATE CHANGE: PULL_FLOOD -> SUSPICIOUS
+State=SUSPICIOUS | Action=ENFORCE POD LIMIT 10
+State=SUSPICIOUS | Quota proposal: 2 -> 10 Pods.
+VERIFIED: UPDATE_QUOTA succeeded; Pod quota is now 10.
+State=SUSPICIOUS | Action=ENFORCE POD LIMIT 10
+State=SUSPICIOUS | Quota already correct and verified: 10 Pods.
+State=SUSPICIOUS | Action=ENFORCE POD LIMIT 10
+State=SUSPICIOUS | Quota already correct and verified: 10 Pods.
+State=SUSPICIOUS | Action=ENFORCE POD LIMIT 10
+State=SUSPICIOUS | Quota already correct and verified: 10 Pods.
+State=SUSPICIOUS | Action=ENFORCE POD LIMIT 10
+State=SUSPICIOUS | Quota already correct and verified: 10 Pods.
+State=SUSPICIOUS | Action=ENFORCE POD LIMIT 10
+State=SUSPICIOUS | Quota already correct and verified: 10 Pods.
+
+POLICY STATE CHANGE: SUSPICIOUS -> PULL_FLOOD
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota proposal: 10 -> 2 Pods.
+VERIFIED: UPDATE_QUOTA succeeded; Pod quota is now 2.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+
+POLICY STATE CHANGE: PULL_FLOOD -> SUSPICIOUS
+State=SUSPICIOUS | Action=ENFORCE POD LIMIT 10
+State=SUSPICIOUS | Quota proposal: 2 -> 10 Pods.
+VERIFIED: UPDATE_QUOTA succeeded; Pod quota is now 10.
+State=SUSPICIOUS | Action=ENFORCE POD LIMIT 10
+State=SUSPICIOUS | Quota already correct and verified: 10 Pods.
+State=SUSPICIOUS | Action=ENFORCE POD LIMIT 10
+State=SUSPICIOUS | Quota already correct and verified: 10 Pods.
+State=SUSPICIOUS | Action=ENFORCE POD LIMIT 10
+State=SUSPICIOUS | Quota already correct and verified: 10 Pods.
+
+POLICY STATE CHANGE: SUSPICIOUS -> RECOVERY
+State=RECOVERY | Action=ENFORCE POD LIMIT 2
+State=RECOVERY | Quota proposal: 10 -> 2 Pods.
+VERIFIED: UPDATE_QUOTA succeeded; Pod quota is now 2.
+State=RECOVERY | Action=ENFORCE POD LIMIT 2
+State=RECOVERY | Quota already correct and verified: 2 Pods.
+State=RECOVERY | Action=ENFORCE POD LIMIT 2
+State=RECOVERY | Quota already correct and verified: 2 Pods.
+State=RECOVERY | Action=ENFORCE POD LIMIT 2
+State=RECOVERY | Quota already correct and verified: 2 Pods.
+State=RECOVERY | Action=ENFORCE POD LIMIT 2
+State=RECOVERY | Quota already correct and verified: 2 Pods.
+State=RECOVERY | Action=ENFORCE POD LIMIT 2
+State=RECOVERY | Quota already correct and verified: 2 Pods.
+State=RECOVERY | Action=ENFORCE POD LIMIT 2
+State=RECOVERY | Quota already correct and verified: 2 Pods.
+
+POLICY STATE CHANGE: RECOVERY -> NORMAL
+State=NORMAL | Action=ENFORCE POD LIMIT 10
+State=NORMAL | Quota proposal: 2 -> 10 Pods.
+VERIFIED: UPDATE_QUOTA succeeded; Pod quota is now 10.
+State=NORMAL | Action=ENFORCE POD LIMIT 10
+State=NORMAL | Quota already correct and verified: 10 Pods.
+State=NORMAL | Action=ENFORCE POD LIMIT 10
+State=NORMAL | Quota already correct and verified: 10 Pods.
+State=NORMAL | Action=ENFORCE POD LIMIT 10
+State=NORMAL | Quota already correct and verified: 10 Pods.
+State=NORMAL | Action=ENFORCE POD LIMIT 10
+State=NORMAL | Quota already correct and verified: 10 Pods.
+State=NORMAL | Action=ENFORCE POD LIMIT 10
+State=NORMAL | Quota already correct and verified: 10 Pods.
+State=NORMAL | Action=ENFORCE POD LIMIT 10
+State=NORMAL | Quota already correct and verified: 10 Pods.
+State=NORMAL | Action=ENFORCE POD LIMIT 10
+State=NORMAL | Quota already correct and verified: 10 Pods.
+State=NORMAL | Action=ENFORCE POD LIMIT 10
+State=NORMAL | Quota already correct and verified: 10 Pods.
+State=NORMAL | Action=ENFORCE POD LIMIT 10
+State=NORMAL | Quota already correct and verified: 10 Pods.
+State=NORMAL | Action=ENFORCE POD LIMIT 10
+State=NORMAL | Quota already correct and verified: 10 Pods.
+State=NORMAL | Action=ENFORCE POD LIMIT 10
+State=NORMAL | Quota already correct and verified: 10 Pods.
+State=NORMAL | Action=ENFORCE POD LIMIT 10
+State=NORMAL | Quota already correct and verified: 10 Pods.
+State=NORMAL | Action=ENFORCE POD LIMIT 10
+State=NORMAL | Quota already correct and verified: 10 Pods.
+State=NORMAL | Action=ENFORCE POD LIMIT 10
+State=NORMAL | Quota already correct and verified: 10 Pods.
+State=NORMAL | Action=ENFORCE POD LIMIT 10
+State=NORMAL | Quota already correct and verified: 10 Pods.
+State=NORMAL | Action=ENFORCE POD LIMIT 10
+State=NORMAL | Quota already correct and verified: 10 Pods.
+State=NORMAL | Action=ENFORCE POD LIMIT 10
+State=NORMAL | Quota already correct and verified: 10 Pods.
+State=NORMAL | Action=ENFORCE POD LIMIT 10
+State=NORMAL | Quota already correct and verified: 10 Pods.
+State=NORMAL | Action=ENFORCE POD LIMIT 10
+State=NORMAL | Quota already correct and verified: 10 Pods.
+State=NORMAL | Action=ENFORCE POD LIMIT 10
+State=NORMAL | Quota already correct and verified: 10 Pods.
+
+POLICY STATE CHANGE: NORMAL -> SUSPICIOUS
+State=SUSPICIOUS | Action=ENFORCE POD LIMIT 10
+State=SUSPICIOUS | Quota already correct and verified: 10 Pods.
+State=SUSPICIOUS | Action=ENFORCE POD LIMIT 10
+State=SUSPICIOUS | Quota already correct and verified: 10 Pods.
+
+POLICY STATE CHANGE: SUSPICIOUS -> PULL_FLOOD
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota proposal: 10 -> 2 Pods.
+VERIFIED: UPDATE_QUOTA succeeded; Pod quota is now 2.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+State=PULL_FLOOD | Action=ENFORCE POD LIMIT 2
+State=PULL_FLOOD | Quota already correct and verified: 2 Pods.
+
+POLICY STATE CHANGE: PULL_FLOOD -> SUSPICIOUS
+State=SUSPICIOUS | Action=ENFORCE POD LIMIT 10
+State=SUSPICIOUS | Quota proposal: 2 -> 10 Pods.
+VERIFIED: UPDATE_QUOTA succeeded; Pod quota is now 10.

@@ -1,0 +1,110 @@
+Loaded local Kubernetes configuration.
+
+Image Pull DoS Detector Started
+--------------------------------
+Namespace: image-pull-mitigation-lab
+CSV output: F:\image-pull-defense\detector_events.csv
+Monitoring window: 120 seconds
+Suspicious churn threshold: 5
+High churn threshold: 10
+Image-pull lifecycle: Kubernetes status observations, not direct runtime timings.
+Detection only: no Kubernetes resources will be changed.
+Press Ctrl+C to stop.
+
+[2026-11-06T06:02:46.732340+00:00] NORMAL     type=DETECTOR_STARTED pod=- container=- reason=- churn_120s=0
+[2026-11-06T06:02:48.144018+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-1-20261103-225924-64807 container=invalid-1-20261103-225924-64807 reason=ErrImagePull churn_120s=0
+[2026-11-06T06:02:48.144940+00:00] SUSPICIOUS type=IMAGE_PULL_ACTIVITY_OBSERVED pod=invalid-1-20261103-225924-64807 container=invalid-1-20261103-225924-64807 reason=ErrImagePull churn_120s=0
+[2026-11-06T06:02:48.145637+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-2-20261103-225925-65187 container=invalid-2-20261103-225925-65187 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:02:48.147675+00:00] SUSPICIOUS type=IMAGE_PULL_ACTIVITY_OBSERVED pod=invalid-2-20261103-225925-65187 container=invalid-2-20261103-225925-65187 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:02:48.149143+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-3-20261103-225925-65493 container=invalid-3-20261103-225925-65493 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:02:48.149940+00:00] SUSPICIOUS type=IMAGE_PULL_ACTIVITY_OBSERVED pod=invalid-3-20261103-225925-65493 container=invalid-3-20261103-225925-65493 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:02:48.150775+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-2-20261102-162008-13556 container=mixed-invalid-2-20261102-162008-13556 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:02:48.155224+00:00] SUSPICIOUS type=IMAGE_PULL_ACTIVITY_OBSERVED pod=mixed-invalid-2-20261102-162008-13556 container=mixed-invalid-2-20261102-162008-13556 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:02:48.155893+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-3-20261102-162010-7601 container=mixed-invalid-3-20261102-162010-7601 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:02:48.156592+00:00] SUSPICIOUS type=IMAGE_PULL_ACTIVITY_OBSERVED pod=mixed-invalid-3-20261102-162010-7601 container=mixed-invalid-3-20261102-162010-7601 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:02:48.157374+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-4-20261102-162011-29515 container=mixed-invalid-4-20261102-162011-29515 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:02:48.158150+00:00] SUSPICIOUS type=IMAGE_PULL_ACTIVITY_OBSERVED pod=mixed-invalid-4-20261102-162011-29515 container=mixed-invalid-4-20261102-162011-29515 reason=ImagePullBackOff churn_120s=0
+Initial Pod snapshot collected.
+[2026-11-06T06:02:53.517773+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-2-20261103-225925-65187 container=invalid-2-20261103-225925-65187 reason=ErrImagePull churn_120s=0
+[2026-11-06T06:02:55.264131+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-4-20261102-162011-29515 container=mixed-invalid-4-20261102-162011-29515 reason=ErrImagePull churn_120s=0
+[2026-11-06T06:02:58.282804+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-1-20261103-225924-64807 container=invalid-1-20261103-225924-64807 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:02:59.307530+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-3-20261103-225925-65493 container=invalid-3-20261103-225925-65493 reason=ErrImagePull churn_120s=0
+[2026-11-06T06:03:04.328600+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-2-20261103-225925-65187 container=invalid-2-20261103-225925-65187 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:03:05.336199+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-3-20261102-162010-7601 container=mixed-invalid-3-20261102-162010-7601 reason=ErrImagePull churn_120s=0
+[2026-11-06T06:03:07.274367+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-2-20261102-162008-13556 container=mixed-invalid-2-20261102-162008-13556 reason=ErrImagePull churn_120s=0
+[2026-11-06T06:03:08.290850+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-4-20261102-162011-29515 container=mixed-invalid-4-20261102-162011-29515 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:03:14.951934+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-3-20261103-225925-65493 container=invalid-3-20261103-225925-65493 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:03:15.208293+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-1-20261103-225924-64807 container=invalid-1-20261103-225924-64807 reason=ErrImagePull churn_120s=0
+[2026-11-06T06:03:18.310846+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-3-20261102-162010-7601 container=mixed-invalid-3-20261102-162010-7601 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:03:19.275103+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-2-20261103-225925-65187 container=invalid-2-20261103-225925-65187 reason=ErrImagePull churn_120s=0
+[2026-11-06T06:03:21.345967+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-2-20261102-162008-13556 container=mixed-invalid-2-20261102-162008-13556 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:03:22.265064+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-4-20261102-162011-29515 container=mixed-invalid-4-20261102-162011-29515 reason=ErrImagePull churn_120s=0
+[2026-11-06T06:03:29.329434+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-3-20261103-225925-65493 container=invalid-3-20261103-225925-65493 reason=ErrImagePull churn_120s=0
+[2026-11-06T06:03:29.352171+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-1-20261103-225924-64807 container=invalid-1-20261103-225924-64807 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:03:31.332891+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-2-20261103-225925-65187 container=invalid-2-20261103-225925-65187 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:03:37.865229+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-4-20261102-162011-29515 container=mixed-invalid-4-20261102-162011-29515 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:03:37.969500+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-3-20261102-162010-7601 container=mixed-invalid-3-20261102-162010-7601 reason=ErrImagePull churn_120s=0
+[2026-11-06T06:03:38.282481+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-2-20261102-162008-13556 container=mixed-invalid-2-20261102-162008-13556 reason=ErrImagePull churn_120s=0
+[2026-11-06T06:03:42.859416+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-3-20261103-225925-65493 container=invalid-3-20261103-225925-65493 reason=ImagePullBackOff churn_120s=0
+Reconnecting to Kubernetes Pod watch in 3 seconds...
+[2026-11-06T06:03:51.305595+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-2-20261102-162008-13556 container=mixed-invalid-2-20261102-162008-13556 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:03:51.308680+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-3-20261102-162010-7601 container=mixed-invalid-3-20261102-162010-7601 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:03:59.262991+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-1-20261103-225924-64807 container=invalid-1-20261103-225924-64807 reason=ErrImagePull churn_120s=0
+[2026-11-06T06:04:10.254116+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-4-20261102-162011-29515 container=mixed-invalid-4-20261102-162011-29515 reason=ErrImagePull churn_120s=0
+[2026-11-06T06:04:12.266300+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-1-20261103-225924-64807 container=invalid-1-20261103-225924-64807 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:04:15.259302+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-2-20261103-225925-65187 container=invalid-2-20261103-225925-65187 reason=ErrImagePull churn_120s=0
+[2026-11-06T06:04:22.265622+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-4-20261102-162011-29515 container=mixed-invalid-4-20261102-162011-29515 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:04:25.260249+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-3-20261103-225925-65493 container=invalid-3-20261103-225925-65493 reason=ErrImagePull churn_120s=0
+[2026-11-06T06:04:27.309200+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-2-20261102-162008-13556 container=mixed-invalid-2-20261102-162008-13556 reason=ErrImagePull churn_120s=0
+[2026-11-06T06:04:28.297839+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-2-20261103-225925-65187 container=invalid-2-20261103-225925-65187 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:04:34.261641+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-3-20261102-162010-7601 container=mixed-invalid-3-20261102-162010-7601 reason=ErrImagePull churn_120s=0
+[2026-11-06T06:04:38.259187+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-3-20261103-225925-65493 container=invalid-3-20261103-225925-65493 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:04:38.282533+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-2-20261102-162008-13556 container=mixed-invalid-2-20261102-162008-13556 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:04:46.258813+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-3-20261102-162010-7601 container=mixed-invalid-3-20261102-162010-7601 reason=ImagePullBackOff churn_120s=0
+Reconnecting to Kubernetes Pod watch in 3 seconds...
+[2026-11-06T06:05:37.263256+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-1-20261103-225924-64807 container=invalid-1-20261103-225924-64807 reason=ErrImagePull churn_120s=0
+[2026-11-06T06:05:43.254768+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-4-20261102-162011-29515 container=mixed-invalid-4-20261102-162011-29515 reason=ErrImagePull churn_120s=0
+[2026-11-06T06:05:48.255301+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-2-20261103-225925-65187 container=invalid-2-20261103-225925-65187 reason=ErrImagePull churn_120s=0
+[2026-11-06T06:05:50.252656+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-1-20261103-225924-64807 container=invalid-1-20261103-225924-64807 reason=ImagePullBackOff churn_120s=0
+Reconnecting to Kubernetes Pod watch in 3 seconds...
+[2026-11-06T06:05:57.310213+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-3-20261103-225925-65493 container=invalid-3-20261103-225925-65493 reason=ErrImagePull churn_120s=0
+[2026-11-06T06:05:57.313341+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-4-20261102-162011-29515 container=mixed-invalid-4-20261102-162011-29515 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:05:58.254573+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-2-20261102-162008-13556 container=mixed-invalid-2-20261102-162008-13556 reason=ErrImagePull churn_120s=0
+[2026-11-06T06:06:03.249449+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-2-20261103-225925-65187 container=invalid-2-20261103-225925-65187 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:06:07.250403+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-3-20261103-225925-65493 container=invalid-3-20261103-225925-65493 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:06:08.253695+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-3-20261102-162010-7601 container=mixed-invalid-3-20261102-162010-7601 reason=ErrImagePull churn_120s=0
+[2026-11-06T06:06:12.254864+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-2-20261102-162008-13556 container=mixed-invalid-2-20261102-162008-13556 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:06:22.247926+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-3-20261102-162010-7601 container=mixed-invalid-3-20261102-162010-7601 reason=ImagePullBackOff churn_120s=0
+Reconnecting to Kubernetes Pod watch in 3 seconds...
+Reconnecting to Kubernetes Pod watch in 3 seconds...
+[2026-11-06T06:08:23.266656+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-1-20261103-225924-64807 container=invalid-1-20261103-225924-64807 reason=ErrImagePull churn_120s=0
+[2026-11-06T06:08:30.236214+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-4-20261102-162011-29515 container=mixed-invalid-4-20261102-162011-29515 reason=ErrImagePull churn_120s=0
+[2026-11-06T06:08:34.239627+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-1-20261103-225924-64807 container=invalid-1-20261103-225924-64807 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:08:37.241229+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-3-20261103-225925-65493 container=invalid-3-20261103-225925-65493 reason=ErrImagePull churn_120s=0
+[2026-11-06T06:08:37.266126+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-2-20261103-225925-65187 container=invalid-2-20261103-225925-65187 reason=ErrImagePull churn_120s=0
+[2026-11-06T06:08:42.254730+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-4-20261102-162011-29515 container=mixed-invalid-4-20261102-162011-29515 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:08:49.239698+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-2-20261103-225925-65187 container=invalid-2-20261103-225925-65187 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:08:52.234872+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-3-20261103-225925-65493 container=invalid-3-20261103-225925-65493 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:08:55.234463+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-2-20261102-162008-13556 container=mixed-invalid-2-20261102-162008-13556 reason=ErrImagePull churn_120s=0
+[2026-11-06T06:09:00.235744+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-3-20261102-162010-7601 container=mixed-invalid-3-20261102-162010-7601 reason=ErrImagePull churn_120s=0
+Reconnecting to Kubernetes Pod watch in 3 seconds...
+[2026-11-06T06:09:09.261431+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-2-20261102-162008-13556 container=mixed-invalid-2-20261102-162008-13556 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:09:15.239899+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-3-20261102-162010-7601 container=mixed-invalid-3-20261102-162010-7601 reason=ImagePullBackOff churn_120s=0
+Reconnecting to Kubernetes Pod watch in 3 seconds...
+Reconnecting to Kubernetes Pod watch in 3 seconds...
+Reconnecting to Kubernetes Pod watch in 3 seconds...
+Reconnecting to Kubernetes Pod watch in 3 seconds...
+[2026-11-06T06:13:34.244713+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-1-20261103-225924-64807 container=invalid-1-20261103-225924-64807 reason=ErrImagePull churn_120s=0
+[2026-11-06T06:13:41.198043+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-4-20261102-162011-29515 container=mixed-invalid-4-20261102-162011-29515 reason=ErrImagePull churn_120s=0
+[2026-11-06T06:13:46.199935+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-2-20261103-225925-65187 container=invalid-2-20261103-225925-65187 reason=ErrImagePull churn_120s=0
+[2026-11-06T06:13:46.225345+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-1-20261103-225924-64807 container=invalid-1-20261103-225924-64807 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:13:52.202212+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-4-20261102-162011-29515 container=mixed-invalid-4-20261102-162011-29515 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:13:52.216987+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-3-20261103-225925-65493 container=invalid-3-20261103-225925-65493 reason=ErrImagePull churn_120s=0
+[2026-11-06T06:14:00.185949+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-2-20261103-225925-65187 container=invalid-2-20261103-225925-65187 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:14:03.191569+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=invalid-3-20261103-225925-65493 container=invalid-3-20261103-225925-65493 reason=ImagePullBackOff churn_120s=0
+[2026-11-06T06:14:04.189291+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-2-20261102-162008-13556 container=mixed-invalid-2-20261102-162008-13556 reason=ErrImagePull churn_120s=0
+[2026-11-06T06:14:11.189918+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-3-20261102-162010-7601 container=mixed-invalid-3-20261102-162010-7601 reason=ErrImagePull churn_120s=0
+[2026-11-06T06:14:16.185039+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-2-20261102-162008-13556 container=mixed-invalid-2-20261102-162008-13556 reason=ImagePullBackOff churn_120s=0
+Reconnecting to Kubernetes Pod watch in 3 seconds...
+[2026-11-06T06:14:23.191473+00:00] SUSPICIOUS type=IMAGE_PULL_FAILURE pod=mixed-invalid-3-20261102-162010-7601 container=mixed-invalid-3-20261102-162010-7601 reason=ImagePullBackOff churn_120s=0
+Reconnecting to Kubernetes Pod watch in 3 seconds...

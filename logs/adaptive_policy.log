@@ -1,0 +1,111 @@
+Adaptive policy engine started.
+Namespace: image-pull-mitigation-lab
+Input: F:\image-pull-defense\detector_events.csv
+State file: F:\image-pull-defense\adaptive_state.txt
+Initial state: RECOVERY
+DRY RUN: This process will not modify Kubernetes resources.
+Window=120s | suspicious churn=5 or 0.050/s | high churn=10 or 0.100/s
+Baseline=600s | behavior multiplier=3.0x | baseline floor=0.025/s
+Pull flood: unique Pods=3 or repeated failures=5
+Recovery: 120s quiet + 30s stable
+Monitoring started.
+
+[2026-11-06T06:02:43.632749+00:00] STATE: RECOVERY | Reason: Stability check: 0/30s | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=0 | unique_failed_pods=0 | repeated_failures=0 | longest_observed_failure_span=0.0s
+
+[2026-11-06T06:02:49.698283+00:00] STATE CHANGE: RECOVERY -> PULL_FLOOD
+Reason: Image-pull failures reached the configured flood threshold
+Metrics: churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=6 | unique_failed_pods=6 | repeated_failures=0 | longest_observed_failure_span=0.0s
+POLICY: Request restrictive Pod admission policy.
+
+[2026-11-06T06:03:05.902401+00:00] STATE: PULL_FLOOD | Reason: Image-pull failures reached the configured flood threshold | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=12 | unique_failed_pods=6 | repeated_failures=6 | longest_observed_failure_span=17.2s
+[2026-11-06T06:03:22.201403+00:00] STATE: PULL_FLOOD | Reason: Image-pull failures reached the configured flood threshold | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=19 | unique_failed_pods=6 | repeated_failures=13 | longest_observed_failure_span=33.2s
+[2026-11-06T06:03:38.413597+00:00] STATE: PULL_FLOOD | Reason: Image-pull failures reached the configured flood threshold | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=26 | unique_failed_pods=6 | repeated_failures=20 | longest_observed_failure_span=50.1s
+[2026-11-06T06:03:55.439982+00:00] STATE: PULL_FLOOD | Reason: Image-pull failures reached the configured flood threshold | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=29 | unique_failed_pods=6 | repeated_failures=23 | longest_observed_failure_span=63.2s
+[2026-11-06T06:04:11.698789+00:00] STATE: PULL_FLOOD | Reason: Image-pull failures reached the configured flood threshold | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=31 | unique_failed_pods=6 | repeated_failures=25 | longest_observed_failure_span=82.1s
+[2026-11-06T06:04:27.927493+00:00] STATE: PULL_FLOOD | Reason: Image-pull failures reached the configured flood threshold | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=36 | unique_failed_pods=6 | repeated_failures=30 | longest_observed_failure_span=99.2s
+[2026-11-06T06:04:44.152351+00:00] STATE: PULL_FLOOD | Reason: Image-pull failures reached the configured flood threshold | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=40 | unique_failed_pods=6 | repeated_failures=34 | longest_observed_failure_span=110.1s
+[2026-11-06T06:05:00.366383+00:00] STATE: PULL_FLOOD | Reason: Image-pull failures reached the configured flood threshold | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=31 | unique_failed_pods=6 | repeated_failures=25 | longest_observed_failure_span=100.9s
+[2026-11-06T06:05:16.578961+00:00] STATE: PULL_FLOOD | Reason: Image-pull failures reached the configured flood threshold | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=25 | unique_failed_pods=6 | repeated_failures=19 | longest_observed_failure_span=87.9s
+[2026-11-06T06:05:32.829109+00:00] STATE: PULL_FLOOD | Reason: Image-pull failures reached the configured flood threshold | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=18 | unique_failed_pods=6 | repeated_failures=12 | longest_observed_failure_span=68.3s
+[2026-11-06T06:05:49.049944+00:00] STATE: PULL_FLOOD | Reason: Image-pull failures reached the configured flood threshold | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=17 | unique_failed_pods=6 | repeated_failures=11 | longest_observed_failure_span=98.0s
+[2026-11-06T06:06:05.292984+00:00] STATE: PULL_FLOOD | Reason: Image-pull failures reached the configured flood threshold | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=19 | unique_failed_pods=6 | repeated_failures=13 | longest_observed_failure_span=108.0s
+[2026-11-06T06:06:21.525545+00:00] STATE: PULL_FLOOD | Reason: Image-pull failures reached the configured flood threshold | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=19 | unique_failed_pods=6 | repeated_failures=13 | longest_observed_failure_span=104.9s
+[2026-11-06T06:06:37.760768+00:00] STATE: PULL_FLOOD | Reason: Image-pull failures reached the configured flood threshold | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=15 | unique_failed_pods=6 | repeated_failures=9 | longest_observed_failure_span=96.0s
+[2026-11-06T06:06:53.976214+00:00] STATE: PULL_FLOOD | Reason: Image-pull failures reached the configured flood threshold | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=12 | unique_failed_pods=6 | repeated_failures=6 | longest_observed_failure_span=15.0s
+[2026-11-06T06:07:10.197816+00:00] STATE: PULL_FLOOD | Reason: Image-pull failures reached the configured flood threshold | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=12 | unique_failed_pods=6 | repeated_failures=6 | longest_observed_failure_span=15.0s
+[2026-11-06T06:07:26.392598+00:00] STATE: PULL_FLOOD | Reason: Image-pull failures reached the configured flood threshold | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=12 | unique_failed_pods=6 | repeated_failures=6 | longest_observed_failure_span=15.0s
+[2026-11-06T06:07:42.614355+00:00] STATE: PULL_FLOOD | Reason: Image-pull failures reached the configured flood threshold | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=11 | unique_failed_pods=6 | repeated_failures=5 | longest_observed_failure_span=15.0s
+[2026-11-06T06:07:59.502401+00:00] STATE: PULL_FLOOD | Reason: Image-pull failures reached the configured flood threshold | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=5 | unique_failed_pods=4 | repeated_failures=1 | longest_observed_failure_span=14.0s
+
+[2026-11-06T06:08:07.618858+00:00] STATE CHANGE: PULL_FLOOD -> SUSPICIOUS
+Reason: Repeated image-pull failures detected for one or more Pods
+Metrics: churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=3 | unique_failed_pods=2 | repeated_failures=1 | longest_observed_failure_span=14.0s
+POLICY: Increase monitoring and collect evidence.
+
+[2026-11-06T06:08:23.839150+00:00] STATE: SUSPICIOUS | Reason: Recent image-pull failure detected | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=1 | unique_failed_pods=1 | repeated_failures=0 | longest_observed_failure_span=0.0s
+
+[2026-11-06T06:08:38.035439+00:00] STATE CHANGE: SUSPICIOUS -> PULL_FLOOD
+Reason: Image-pull failures reached the configured flood threshold
+Metrics: churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=5 | unique_failed_pods=4 | repeated_failures=1 | longest_observed_failure_span=11.0s
+POLICY: Request restrictive Pod admission policy.
+
+[2026-11-06T06:08:54.233552+00:00] STATE: PULL_FLOOD | Reason: Image-pull failures reached the configured flood threshold | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=8 | unique_failed_pods=4 | repeated_failures=4 | longest_observed_failure_span=15.0s
+[2026-11-06T06:09:10.438047+00:00] STATE: PULL_FLOOD | Reason: Image-pull failures reached the configured flood threshold | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=11 | unique_failed_pods=6 | repeated_failures=5 | longest_observed_failure_span=15.0s
+[2026-11-06T06:09:26.671560+00:00] STATE: PULL_FLOOD | Reason: Image-pull failures reached the configured flood threshold | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=12 | unique_failed_pods=6 | repeated_failures=6 | longest_observed_failure_span=15.0s
+[2026-11-06T06:09:42.899679+00:00] STATE: PULL_FLOOD | Reason: Image-pull failures reached the configured flood threshold | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=12 | unique_failed_pods=6 | repeated_failures=6 | longest_observed_failure_span=15.0s
+[2026-11-06T06:09:59.111801+00:00] STATE: PULL_FLOOD | Reason: Image-pull failures reached the configured flood threshold | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=12 | unique_failed_pods=6 | repeated_failures=6 | longest_observed_failure_span=15.0s
+[2026-11-06T06:10:15.466509+00:00] STATE: PULL_FLOOD | Reason: Image-pull failures reached the configured flood threshold | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=12 | unique_failed_pods=6 | repeated_failures=6 | longest_observed_failure_span=15.0s
+[2026-11-06T06:10:31.721003+00:00] STATE: PULL_FLOOD | Reason: Image-pull failures reached the configured flood threshold | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=10 | unique_failed_pods=6 | repeated_failures=4 | longest_observed_failure_span=15.0s
+[2026-11-06T06:10:47.959636+00:00] STATE: PULL_FLOOD | Reason: Image-pull failures reached the configured flood threshold | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=6 | unique_failed_pods=4 | repeated_failures=2 | longest_observed_failure_span=15.0s
+
+[2026-11-06T06:10:54.052139+00:00] STATE CHANGE: PULL_FLOOD -> SUSPICIOUS
+Reason: Repeated image-pull failures detected for one or more Pods
+Metrics: churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=4 | unique_failed_pods=2 | repeated_failures=2 | longest_observed_failure_span=15.0s
+POLICY: Increase monitoring and collect evidence.
+
+[2026-11-06T06:11:10.291221+00:00] STATE: SUSPICIOUS | Reason: Recent image-pull failure detected | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=1 | unique_failed_pods=1 | repeated_failures=0 | longest_observed_failure_span=0.0s
+
+[2026-11-06T06:11:16.368281+00:00] STATE CHANGE: SUSPICIOUS -> RECOVERY
+Reason: Quiet period completed; beginning stability check
+Metrics: churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=0 | unique_failed_pods=0 | repeated_failures=0 | longest_observed_failure_span=0.0s
+POLICY: Hold current restrictions while quiet and stability are verified.
+
+[2026-11-06T06:11:32.588167+00:00] STATE: RECOVERY | Reason: Stability check: 14/30s | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=0 | unique_failed_pods=0 | repeated_failures=0 | longest_observed_failure_span=0.0s
+
+[2026-11-06T06:11:48.801865+00:00] STATE CHANGE: RECOVERY -> NORMAL
+Reason: Recovery completed; system remained stable
+Metrics: churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=0 | unique_failed_pods=0 | repeated_failures=0 | longest_observed_failure_span=0.0s
+POLICY: Monitoring only; no additional restriction requested.
+
+[2026-11-06T06:12:05.003620+00:00] STATE: NORMAL | Reason: No suspicious activity detected | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=0 | unique_failed_pods=0 | repeated_failures=0 | longest_observed_failure_span=0.0s
+[2026-11-06T06:12:21.204769+00:00] STATE: NORMAL | Reason: No suspicious activity detected | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=0 | unique_failed_pods=0 | repeated_failures=0 | longest_observed_failure_span=0.0s
+[2026-11-06T06:12:37.421647+00:00] STATE: NORMAL | Reason: No suspicious activity detected | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=0 | unique_failed_pods=0 | repeated_failures=0 | longest_observed_failure_span=0.0s
+[2026-11-06T06:12:53.660950+00:00] STATE: NORMAL | Reason: No suspicious activity detected | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=0 | unique_failed_pods=0 | repeated_failures=0 | longest_observed_failure_span=0.0s
+[2026-11-06T06:13:09.921085+00:00] STATE: NORMAL | Reason: No suspicious activity detected | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=0 | unique_failed_pods=0 | repeated_failures=0 | longest_observed_failure_span=0.0s
+[2026-11-06T06:13:26.151623+00:00] STATE: NORMAL | Reason: No suspicious activity detected | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=0 | unique_failed_pods=0 | repeated_failures=0 | longest_observed_failure_span=0.0s
+
+[2026-11-06T06:13:34.262346+00:00] STATE CHANGE: NORMAL -> SUSPICIOUS
+Reason: Recent image-pull failure detected
+Metrics: churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=1 | unique_failed_pods=1 | repeated_failures=0 | longest_observed_failure_span=0.0s
+POLICY: Increase monitoring and collect evidence.
+
+
+[2026-11-06T06:13:46.418173+00:00] STATE CHANGE: SUSPICIOUS -> PULL_FLOOD
+Reason: Image-pull failures reached the configured flood threshold
+Metrics: churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=4 | unique_failed_pods=3 | repeated_failures=1 | longest_observed_failure_span=12.0s
+POLICY: Request restrictive Pod admission policy.
+
+[2026-11-06T06:14:02.651574+00:00] STATE: PULL_FLOOD | Reason: Image-pull failures reached the configured flood threshold | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=7 | unique_failed_pods=4 | repeated_failures=3 | longest_observed_failure_span=14.0s
+[2026-11-06T06:14:18.864869+00:00] STATE: PULL_FLOOD | Reason: Image-pull failures reached the configured flood threshold | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=11 | unique_failed_pods=6 | repeated_failures=5 | longest_observed_failure_span=14.0s
+[2026-11-06T06:14:35.120082+00:00] STATE: PULL_FLOOD | Reason: Image-pull failures reached the configured flood threshold | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=12 | unique_failed_pods=6 | repeated_failures=6 | longest_observed_failure_span=14.0s
+[2026-11-06T06:14:51.342926+00:00] STATE: PULL_FLOOD | Reason: Image-pull failures reached the configured flood threshold | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=12 | unique_failed_pods=6 | repeated_failures=6 | longest_observed_failure_span=14.0s
+[2026-11-06T06:15:07.595817+00:00] STATE: PULL_FLOOD | Reason: Image-pull failures reached the configured flood threshold | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=12 | unique_failed_pods=6 | repeated_failures=6 | longest_observed_failure_span=14.0s
+[2026-11-06T06:15:23.827129+00:00] STATE: PULL_FLOOD | Reason: Image-pull failures reached the configured flood threshold | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=12 | unique_failed_pods=6 | repeated_failures=6 | longest_observed_failure_span=14.0s
+[2026-11-06T06:15:40.074154+00:00] STATE: PULL_FLOOD | Reason: Image-pull failures reached the configured flood threshold | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=11 | unique_failed_pods=6 | repeated_failures=5 | longest_observed_failure_span=14.0s
+[2026-11-06T06:15:56.269778+00:00] STATE: PULL_FLOOD | Reason: Image-pull failures reached the configured flood threshold | churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=6 | unique_failed_pods=4 | repeated_failures=2 | longest_observed_failure_span=12.0s
+
+[2026-11-06T06:16:04.367533+00:00] STATE CHANGE: PULL_FLOOD -> SUSPICIOUS
+Reason: Repeated image-pull failures detected for one or more Pods
+Metrics: churn_120s=0 | churn_rate=0.000/s | baseline_rate=0.000/s (baseline_events=0) | behavior_anomaly=False | pull_failures=3 | unique_failed_pods=2 | repeated_failures=1 | longest_observed_failure_span=12.0s
+POLICY: Increase monitoring and collect evidence.
+

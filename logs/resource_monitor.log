@@ -1,0 +1,102 @@
+
+Resource Pressure Monitor Started
+-----------------------------------
+Namespace: image-pull-mitigation-lab
+CSV file: F:\image-pull-defense\detector_events.csv
+CPU high threshold: 80%
+Memory high threshold: 80%
+CPU recovery threshold: below 70%
+Memory recovery threshold: below 70%
+Required high readings: 3
+Required low readings: 3
+Polling interval: 10s
+Pressure refresh interval: 30s
+
+Monitoring only. No Kubernetes resources will be changed.
+
+Could not retrieve Kubernetes metrics: error: Metrics API not available
+
+Could not retrieve Kubernetes metrics: error: Metrics API not available
+
+Could not retrieve Kubernetes metrics: error: Metrics API not available
+
+Could not retrieve Kubernetes metrics: error: Metrics API not available
+
+Could not retrieve Kubernetes metrics: error: Metrics API not available
+
+Could not retrieve Kubernetes metrics: error: Metrics API not available
+
+Could not retrieve Kubernetes metrics: error: Metrics API not available
+
+Could not retrieve Kubernetes metrics: error: Metrics API not available
+
+Node: minikube | CPU: 4% | Memory: 23%
+Node: minikube | CPU: 4% | Memory: 23%
+Node: minikube | CPU: 4% | Memory: 23%
+Node: minikube | CPU: 4% | Memory: 23%
+Node: minikube | CPU: 4% | Memory: 23%
+Node: minikube | CPU: 3% | Memory: 23%
+Node: minikube | CPU: 3% | Memory: 23%
+Node: minikube | CPU: 3% | Memory: 23%
+Node: minikube | CPU: 3% | Memory: 23%
+Node: minikube | CPU: 3% | Memory: 23%
+Node: minikube | CPU: 3% | Memory: 23%
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 4% | Memory: 24%
+Node: minikube | CPU: 4% | Memory: 24%
+Node: minikube | CPU: 4% | Memory: 24%
+Node: minikube | CPU: 4% | Memory: 24%
+Node: minikube | CPU: 4% | Memory: 24%
+Node: minikube | CPU: 4% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 23%
+Node: minikube | CPU: 3% | Memory: 23%
+Node: minikube | CPU: 3% | Memory: 23%
+Node: minikube | CPU: 3% | Memory: 23%
+Node: minikube | CPU: 3% | Memory: 23%
+Node: minikube | CPU: 3% | Memory: 23%
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 24%
+Monitoring error: [WinError 1455] The paging file is too small for this operation to complete
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 23%
+Node: minikube | CPU: 3% | Memory: 23%
+Node: minikube | CPU: 3% | Memory: 23%
+Node: minikube | CPU: 3% | Memory: 23%
+Node: minikube | CPU: 3% | Memory: 23%
+Node: minikube | CPU: 3% | Memory: 23%
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 24%
+Node: minikube | CPU: 3% | Memory: 24%
